@@ -1,0 +1,70 @@
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.imagen{
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/india.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.gradiente{
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(to bottom left, rgba(255,0,0,.1), rgba(255,0,0,1));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transformacion{
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transform: rotate(45deg) scale(1) skew(20deg,10deg)
+  translate(250px, 50px) rotateX(40deg);
+}
+
+.transicion{
+  width: 100px;
+  height: 100px;
+  background: pink;
+  transition: background 2s, height 3s;
+  transition-delay: 3s;
+}
+
+.transicion:hover{
+  background-color: yellow;
+  height: 200px;
+  transform: rotate(45deg) scale(2) translate(100px, 50px);
+}
+
+.animacion{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: animacion;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/*
+@keyframes animacion{
+  from {background-color: blue;
+  }
+  to {background-color: yellow;
+  }
+}
+*/
+
+@keyframes animacion {
+  0% { background-color: blue;}
+  25% {background-color: green; height: 200px;}
+  50% {background-color: yellow;}
+  100% {background-color: orange;}
+}

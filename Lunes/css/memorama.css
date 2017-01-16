@@ -1,0 +1,12 @@
+.memorama{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: red;
+}
+
+.memorama:hover{
+  background-color: yellow;
+  height: 100px;
+  text-align: center;
+}
